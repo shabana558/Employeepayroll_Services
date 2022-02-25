@@ -15,3 +15,8 @@ Insert into Employee_payrolls(name,salary,startDate) values
 ('Gayathri',10000,'2020-05-13'),
 ('Aruna',30000,'2020-08-19');
 select * from Employee_payrolls;
+--UC-4 Retrieve All data--
+select * from Employee_payrolls;
+------- UC 5: Select Query using Cast() an GetDate() -------
+select salary from Employee_payrolls where name='Magesh';
+select salary from Employee_payrolls where startDate BETWEEN Cast('2020-12-20' as Date) and GetDate();
